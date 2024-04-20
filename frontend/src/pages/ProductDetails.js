@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
-
+import Loading from "../components/Loading";
 
 export default function ProductDetails({ cartItems, setCartItems}) {
     const [product, setProduct] = useState(null);
@@ -45,8 +45,9 @@ export default function ProductDetails({ cartItems, setCartItems}) {
     }
 
 
-    return product && <div className="container container-fluid">
-        <div className="row f-flex justify-content-around">
+    return <div id="product-details">
+         {product ? <div className="container container-fluid" >
+        <div className="row f-flex justify-content-around" >
             <div className="col-12 col-lg-5 img-fluid" id="product_image">
                 <img src={product.images[0].image} alt="sdf" height="500" width="500" />
             </div>
@@ -89,8 +90,8 @@ export default function ProductDetails({ cartItems, setCartItems}) {
 
             </div>
 
-        </div>
-
+        </div> 
+    </div>: <Loading/>}
     </div>
 
 }
