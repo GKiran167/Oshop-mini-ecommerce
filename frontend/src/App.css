@@ -295,6 +295,10 @@ footer {
 
 /* Cart */
 
+#cart-details{
+  min-height: 68vh;
+}
+
 .cart-item {
   margin: 1.8rem 0rem;
   padding: 0rem 0.7rem;

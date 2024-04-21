@@ -1,0 +1,9 @@
+#cart_btn:hover{
+    transition: 0.3s;
+    background-color: #e6882f;
+}
+
+#product-img:hover{
+    transition: 0.4s ease-in-out;
+    transform: scale(1.135);
+}

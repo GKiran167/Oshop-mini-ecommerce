@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-
+import './ProductCard.css'
 
 export default function ProductCard({ product }) {
     // const {product} = props;
     return <>
         <div className="col-sm-12 col-md-6 col-lg-3 my-3">
             <div className="card p-3 rounded">
-                <Link to={"/product/" + product._id}> <img
+                <Link to={"/product/" + product._id} id="product-img"> <img
                     className="card-img-top mx-auto"
                     src={product.images[0].image}
                 /></Link>

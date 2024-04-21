@@ -1,3 +1,23 @@
-#search{
+#search {
   left: 15px;
+}
+
+#search_btn:hover {
+  transition: 0.3s;
+  background-color: #f3933a;
+}
+
+#search_field{
+  outline: none;
+  background-color: #f3f7fb;
+}
+
+#search_field:focus{
+  background-color: #e9f4ff;
+  outline: none;
+}
+
+#search_field:hover{
+  background-color: #e9f4ff;
+  outline: none;
 }

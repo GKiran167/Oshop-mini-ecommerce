@@ -1,23 +1,38 @@
-#header{
+#header {
     position: sticky;
     top: -5px;
     z-index: 1;
     backface-visibility: 50%;
 }
 
-.logo{
+.logo {
 
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.logo-txt{
+.logo-txt {
     position: absolute;
     top: 38px;
     left: 55px;
     color: white;
     font-size: 10px;
-    font-weight:500;
+    font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#link-cart:hover {
+    text-decoration: none;
+}
+
+#link-cart:hover #cart_count {
+    transform: scale(1.4);
+    transition: 0.3s;
+    background-color: #f3933a;
+}
+
+#link-cart:hover #cart {
+    transition: 0.3s;
+    color: aliceblue;
 }
